@@ -1,4 +1,4 @@
-class Material
+class Material ///ada///
 {
 private:
 	int numMaterial;
@@ -32,7 +32,7 @@ void Material::Add()
 	do
 	{
 		
-		cout << "ÊäÈë²ÄÁÏÃû£¬ÊýÁ¿£¬¼Û¸ñ" << endl;
+		cout << "è¾“å…¥ææ–™åï¼Œæ•°é‡ï¼Œä»·æ ¼" << endl;
 		cin >> material_name >> numMaterial >> priceMaterial;
 		Check = check(material_name);
 		if (Check==1)
@@ -41,13 +41,13 @@ void Material::Add()
 			ofstream out("Material.txt", ios::app);
 			out << number << "  " << dish_name << "  " << price << "  " << endl;
 			out.close();
-			cout << "ÊÇ·ñ¼ÌÐøÊÇ(y)·ñ(n)" << endl;
+			cout << "æ˜¯å¦ç»§ç»­æ˜¯(y)å¦(n)" << endl;
 			cin >> flag;
 		}
 		else
 		{
-			cout << "²ÄÁÏÒÑ´æÔÚ£¡" << endl;
-			cout << "ÊÇ·ñÖØÐÂ¼ÌÐøÊÇ(y)·ñ(n)" << endl;
+			cout << "ææ–™å·²å­˜åœ¨ï¼" << endl;
+			cout << "æ˜¯å¦é‡æ–°ç»§ç»­æ˜¯(y)å¦(n)" << endl;
 			cin >> flag;
 		}
 	} while (flag == 'y');
@@ -62,7 +62,7 @@ void Material::Del()
 	do
 	{
 
-		cout << "ÊäÈë²ÄÁÏÃû" << endl;
+		cout << "è¾“å…¥ææ–™å" << endl;
 		cin >> newname;
 		Check = check(newname);
 		if (Check == 0)
